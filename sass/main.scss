@@ -67,7 +67,7 @@ html{
         height: 10vh;
     }
     .content{
-        grid-column: 1/8;
+        grid-column: 1/9;
         grid-row:3/4;
         display: flex;
         flex-direction:column;
@@ -131,14 +131,42 @@ html{
     .menu{
         background: coral;
         grid-row:3/4;
-        grid-column: 8/11;
+        grid-column: 9/11;
         display: flex;
         flex-direction:column;
         .menu_box{
-            padding-bottom: 90%;
+            height: 100px;
             width: 90%;
             background: skyblue;
             margin: 5vh 5%;
+        }
+        .connouncement{
+
+        }
+        .classification{
+
+        }
+        .years_Sort{
+
+        }
+        .statistics{
+            span{
+                display: block;
+                width: 100%;
+                text-align: center;
+                background: yellowgreen;
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+            }
+            .flow{
+                border-radius: 0 0 10px 10px ;
+                background: yellowgreen;
+                p{
+                    text-align: left;
+                    font-size: 0.7rem;
+                    padding: 5px;
+                }
+            }
         }
     }
     .footer{
