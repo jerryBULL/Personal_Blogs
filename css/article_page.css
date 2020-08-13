@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 4px;
+  border-radius: 10px;
+  background: #dbdbdb;
+}
+
+hr {
+  margin: 1.5vh 0.7vh;
+  height: 0.2vh;
+  background: linear-gradient(90deg, #00000038, #fff, #00000038);
+  border: none;
+  border-radius: 20px;
+}
+
+.content_box {
+  width: 90%;
+  height: 16vh;
+  margin: 1vh 5% 1vh 5%;
+  background: #e0dddd;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.content_box a {
+  color: black;
+  text-decoration: none;
+  font-size: 2.3rem;
+  padding: 20px;
+}
+.content_box hr {
+  width: 98%;
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #00000061, #0000008a, #00000061);
+  margin: 1% 1%;
+  border-radius: 40%;
+}
+.content_box span {
+  display: block;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.content_page {
+  margin: 0 auto;
+  width: 60%;
+  height: 45px;
+  display: flex;
+}
+.content_page .left {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  max-width: 45px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.content_page .page {
+  flex: 1;
+  background: #f4eded;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content_page .page span {
+  text-align: center;
+  background: #deb8878a;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+}
+.content_page .right {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  max-width: 45px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.content_page img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=article_page.css.map */

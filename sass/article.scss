@@ -1,8 +1,20 @@
-
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-size: 25px;
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration:none;
+    }
+}
+body{
+    background: #ffffffc4;
+    padding: 20px;
 }
 ::-webkit-scrollbar {
     width: 1vw;
@@ -16,37 +28,12 @@
     border-radius: 10px;
     background: rgb(219,219,219);
 }
-hr{
-    margin: 1.5vh 0.7vh;
-    height: 0.2vh;
-    background: linear-gradient(90deg,#00000038, #0000008a,#00000038);
-    border: none;
-    border-radius: 20px;
+h1{
+    text-align: center;   
 }
-.content_box{
-    width: 90%;
-    height: 17vh;
-    margin: 1vh 5% 1vh 5%;
-    background: #e0dddd;
-    border-radius: 10px;
-    padding: 10px 0;
-    a{
-        color: black;
-        text-decoration:none;
-        font-size: 2.3rem;
-        padding: 20px;
-    }
-    hr{
-        width: 98%;
-        border: none;
-        height: 2px;
-        background: linear-gradient(90deg,#00000061, #0000008a,#00000061);
-        margin: 1% 1%;
-        border-radius: 40%;
-    }
-    span{
-        display: block;
-        font-size: 1.4rem;
-        padding:10px;
-    }
+hr{
+    border: none;
+    height: 10px;
+    background: linear-gradient(90deg,#00000038, #0000008a,#00000038);
+    border-radius: 20px;
 }

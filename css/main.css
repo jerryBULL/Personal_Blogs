@@ -72,6 +72,7 @@ body {
   cursor: pointer;
 }
 .container .shrink_nav {
+  z-index: 10;
   position: fixed;
   width: 99vw;
   height: 10vh;
@@ -84,59 +85,7 @@ body {
 }
 .container .content iframe {
   border: none;
-  height: 200vh;
-}
-.container .content .content_page {
-  margin: 0 auto 5vh;
-  width: 60%;
-  height: 45px;
-  display: flex;
-}
-.container .content .content_page .left {
-  position: relative;
-  height: 100%;
-  width: 20%;
-  max-width: 45px;
-  background: white;
-  border-radius: 50% 0 0 50%;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.container .content .content_page .page {
-  flex: 1;
-  background: #f4eded;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .content .content_page .page span {
-  text-align: center;
-  background: #deb8878a;
-  cursor: pointer;
-  margin: 5px;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  line-height: 30px;
-}
-.container .content .content_page .right {
-  position: relative;
-  height: 100%;
-  width: 20%;
-  max-width: 45px;
-  background: white;
-  border-radius: 0 50% 50% 0;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.container .content .content_page img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 120vh;
 }
 .container .menu {
   grid-row: 3/4;
