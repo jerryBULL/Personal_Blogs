@@ -12,6 +12,9 @@ html{
         text-decoration:none;
     }
 }
+body{
+    background: linear-gradient(#344850, #0000008a, #344850);
+}
 ::-webkit-scrollbar {
     width: 1vw;
 }
@@ -67,7 +70,7 @@ html{
         height: 10vh;
     }
     .content{
-        grid-column: 1/9;
+        grid-column: 2/8;
         grid-row:3/4;
         display: flex;
         flex-direction:column;
@@ -92,7 +95,7 @@ html{
             }
             .page{
                 flex:1;
-                background: cadetblue;
+                background: #f4eded;
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
                 display: flex;
@@ -100,7 +103,7 @@ html{
                 align-items: center;
                 span{
                     text-align: center;
-                    background: burlywood;
+                    background: #deb8878a;
                     cursor: pointer;
                     margin: 5px;
                     display: inline-block;
@@ -129,48 +132,71 @@ html{
         }
     }
     .menu{
-        background: coral;
         grid-row:3/4;
-        grid-column: 9/11;
+        grid-column: 8/10;
         display: flex;
         flex-direction:column;
         .menu_box{
-            height: 100px;
             width: 90%;
-            background: skyblue;
-            margin: 5vh 5%;
+            margin: 2vh 5%;
         }
-        .connouncement{
-
+        hr{
+            height: 3px;
+            background: linear-gradient(90deg,#00000038, #0000008a,#00000038);
+            border: none;
         }
-        .classification{
-
+        span{
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
         }
-        .years_Sort{
-
+        p{
+            display: inline-block;
+            text-align: left;
+            font-size: 0.7rem;
+            padding: 5px;
         }
-        .statistics{
-            span{
-                display: block;
-                width: 100%;
-                text-align: center;
-                background: yellowgreen;
-                padding: 10px;
-                border-radius: 10px 10px 0 0;
-            }
-            .flow{
-                border-radius: 0 0 10px 10px ;
-                background: yellowgreen;
-                p{
-                    text-align: left;
-                    font-size: 0.7rem;
-                    padding: 5px;
+        ul{
+            padding: 0 10px;
+            li{
+                display: none;
+                font-size: 0.7rem;
+                margin: 0 0 0 20px;
+                a:visited{
+                    color: #5c5151;
+                }
+                a:link{
+                    color: #5c5151;
                 }
             }
         }
+        img{
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        .announcement{
+            background: #e0dddd;
+            border-radius: 10px ;
+        }
+        .classification{
+            background: #e0dddd;
+            border-radius: 10px ;
+        }
+        .years_Sort{
+            background: #e0dddd;
+            border-radius: 10px ;
+        }
+        .statistics{
+            border-radius: 10px ;
+            background: #e0dddd;
+        }
     }
     .footer{
-        background: cyan;
+        background: url("../image/header.jpg");
+        background-position: bottom;
+        background-size: cover;
+        opacity: 0.8;
         grid-column: 1/11;
         grid-row:4/5;
         text-align: center;
@@ -178,6 +204,7 @@ html{
         p{
             font-size: 0.7rem;
             font-weight:bold;
+            color: aliceblue;
         }
         li{
             display: inline-block;
@@ -210,6 +237,7 @@ html{
             grid-row: 5/6;
         }
         .content{
+            grid-column: 1/11;
             .content_page{
                 width: 90%;
             }
@@ -238,6 +266,7 @@ html{
             grid-row: 5/6;
         }
         .content{
+            grid-column: 1/11;
             .content_page{
                 width: 90%;
             }
@@ -266,6 +295,7 @@ html{
             grid-row: 5/6;
         }
         .content{
+            grid-column: 1/11;
             .content_page{
                 width: 90%;
             }
