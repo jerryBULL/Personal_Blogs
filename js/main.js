@@ -6,7 +6,7 @@
     ga ( 'send' , ' pageview' );
     ga(function() {
         let trackers = ga.getAll();
-        $('#flow').append("<p>在線人數："+trackers.length+"</p>");
+        $('#online').append(trackers.length);
     });
 $(document).ready(function () {
     $( window ).scroll(function() {

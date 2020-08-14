@@ -103,6 +103,7 @@ body {
   text-decoration: none;
   font-size: 1.4rem;
   font-family: Microsoft JhengHei;
+  text-align: justify;
 }
 .container .content .content_box hr {
   position: relative;
@@ -118,6 +119,7 @@ body {
   font-family: Microsoft JhengHei;
   display: block;
   font-size: 1rem;
+  text-align: justify;
 }
 .container .content .content_page {
   margin: 0 auto;
@@ -235,6 +237,9 @@ body {
 .container .menu .statistics {
   border-radius: 10px;
   background: #e0dddd;
+}
+.container .menu .statistics #online {
+  display: inline;
 }
 .container .footer {
   background: url("../image/header.jpg");
