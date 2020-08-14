@@ -99,7 +99,7 @@ body {
   overflow: hidden;
 }
 .container .content .content_box a {
-  color: black;
+  color: #03a9f4db;
   text-decoration: none;
   font-size: 1.4rem;
   font-family: Microsoft JhengHei;
@@ -120,6 +120,9 @@ body {
   display: block;
   font-size: 1rem;
   text-align: justify;
+}
+.container .content .content_box span a {
+  font-size: 0.5rem;
 }
 .container .content .content_page {
   margin: 0 auto;

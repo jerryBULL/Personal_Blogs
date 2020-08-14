@@ -90,7 +90,7 @@ body{
             padding: 10px;
             overflow: hidden;
             a{
-                color: black;
+                color: #03a9f4db;
                 text-decoration:none;
                 font-size: 1.4rem;
                 font-family: Microsoft JhengHei;
@@ -111,6 +111,9 @@ body{
                 display: block;
                 font-size: 1rem;
                 text-align: justify;
+                a{
+                    font-size: 0.5rem;
+                }
             }
         }
         .content_page{
