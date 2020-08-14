@@ -1,48 +1,75 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   font-size: 25px;
 }
 html li {
-  list-style: none;
-}
-html a {
-  text-decoration: none;
+  list-style-position: inside;
 }
 
-body {
-  background: #ffffffc4;
-  padding: 20px;
-}
-
-::-webkit-scrollbar {
-  width: 1vw;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 4px;
-  border-radius: 10px;
-  background: #dbdbdb;
-}
-
-h1 {
+.article_title {
   text-align: center;
+  font-family: Microsoft JhengHei;
+  font-size: 2.3rem;
 }
 
-hr {
+.article_hr {
+  margin: 20px 0;
   border: none;
-  height: 10px;
+  height: 3px;
   background: linear-gradient(90deg, #00000038, #0000008a, #00000038);
   border-radius: 20px;
+}
+
+.table_of_Contents {
+  font-size: 1rem;
+}
+.table_of_Contents li {
+  list-style-position: inside;
+  list-style-type: inherit;
+  margin: 3px 0;
+  font-size: 1rem;
+}
+
+.preface .content_title {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.preface p {
+  text-align: justify;
+  margin-top: 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+.paragraph {
+  font-family: sans-serif;
+}
+.paragraph a:link {
+  color: #03a9f4db;
+}
+.paragraph a:visited {
+  color: #03a9f4db;
+}
+.paragraph .content_title {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.paragraph p {
+  text-align: justify;
+  margin-top: 0.5rem;
+  letter-spacing: 1.5px;
+}
+.paragraph ol {
+  list-style-position: inside;
+  margin-top: 0.5rem;
+}
+.paragraph ol li {
+  list-style-type: inherit;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=article.css.map */

@@ -1,0 +1,58 @@
+<div class="menu_box announcement">
+    <span>公告</span>
+    <hr>
+    <p>Welcome to my blog.</p>
+</div>
+<div class="menu_box classification">
+    <span>分類</span>
+    <hr>
+    <ul>
+        <img id="daily" src="../image/folder.png"><p>日常</p>
+        <ul>
+            <li><img id="technology" src="../image/folder.png"><p>開箱</p></li>
+            <li>
+                <img id="technology" src="../image/folder.png"><p>心得</p>                                <ul>
+                    <li><a href="../article/2020_technology1.html">創立一個屬於自己的技術部落格</a></li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
+    <ul>
+        <img id="technology" src="../image/folder.png"><p>技術</p>
+        <ul>
+            <li>
+                <img id="technology" src="../image/folder.png"><p>Html</p>
+                <ul>
+                    <li>Test</li>
+                </ul>
+            </li>
+            <li>
+                <img id="technology" src="../image/folder.png"><p>CSS</p>
+            </li>
+            <li>
+                <img id="technology" src="../image/folder.png"><p>Javascript</p>
+            </li>
+        </ul>
+    </ul>
+</div>
+<div class="menu_box years_Sort">
+    <span>年分排序</span>
+    <hr>
+    <ul>
+        <img id="2020year" src="../image/folder.png"><p>2020</p>
+        <ul>
+            <li><a href="">Test</a></li>
+        </ul>
+    </ul>
+</div>
+<div class="menu_box statistics">
+    <span>人氣統計</span>
+    <hr>
+    <div class="flow" id="flow">
+    </div>
+</div>
+<script>
+    $("#daily,#technology,#2020year").click(function () {
+        $(this).nextAll("ul").children().toggle( "slow" );
+    });
+</script>

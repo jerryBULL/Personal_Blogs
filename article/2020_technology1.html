@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>個人技術部落格</title>
+        <link rel="icon" href="../image/Personal_Blogs_ico.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174663250-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-174663250-1');
+        </script>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/article.css">
+    </head>
+    <body>
+        <div class="container">
+            <!--標題列-->
+            <div class="header">
+
+            </div>
+            <nav>
+                <a href="https://jerrybull.github.io/Personal_Blogs/">HOME</a>
+                <img src="../image/back.png">
+            </nav>
+            <!--標題列-->
+            <!--文章-->
+            <div class="content" style="background: #e2e2e2;padding: 15px;">
+                <h1 class="article_title">創立一個屬於自己的技術部落格</h1>
+                <hr class="article_hr">
+                <section class="preface">
+                    <h3 class="content_title">前言</h3>
+                    <p>我自己為什麼要花時間去製作和撰寫部落格以及為何選擇自己動手做和從零到有去製作個人技術部落格。</p>
+                </section>
+                <hr class="article_hr">
+                <section>
+                    <ol class="table_of_Contents">
+                        <li>為什麼要製作個人技術部落格</li>
+                        <li>別人提供與自己製作抉擇</li>
+                        <li>從無到有</li>
+                        <li>總結</li>
+                    </ol>
+                </section>
+                <hr class="article_hr">
+                <section class="paragraph">
+                    <h3 class="content_title">為什麼要製作個人技術部落格</h3>
+                    <p>在製作Side Project時容易忘記一些以前用過的功能，導致需要回頭查看書籤或是詢問Google大神增加製作的時間成本，再加上看到很多寫程式的前輩都有撰寫技術部落格的習慣。</p>
+                    <p>所以我想要趁著還有時間來製作一個屬於我的部落格，一方面增加自己在文章上的撰寫能力也能夠將所學的知識記錄下來提供給更多的人！</p>
+                </section>
+                <section class="paragraph">
+                    <h3 class="content_title">別人提供與自己製作抉擇</h3>
+                    <p>網路上有很多很方便的部落格網頁例如：</p>
+                    <ol>
+                        <li>Hexo</li>
+                        <li>Wordpress</li>
+                        <li>Medium...等等</li>
+                    </ol>
+                    <p>但是我還是打算自己動手去建立一個真正屬於我的部落格，一方面是可以提升自己切版的能力也可以更了解JQuery的操作。</p>
+                </section>
+                <section class="paragraph">
+                    <h3 class="content_title">從無到有</h3>
+                    <p>首先先畫出一個版型出來，我是使用<a href="https://app.diagrams.net/">Google的流程圖</a>去畫的，之所以用這個是因為我只需要框出一個大概的版型方便我去切版。</p>
+                    <p>接著我想要能夠有瀏覽人數的功能，找了一下子，終於找到<a href="https://analytics.google.com/">Google Analytics</a>符合我想要得所有功能！雖然目前部落格內只能顯示在線人數的功能...</p>
+                    <p>再來是加上分類和年份排序方便管理文章，這個部分一開始我想要使用手動去做分類，到後面我想要使用Vue去做資料的分類。</p>
+                    <p>最後是將網頁美化，這是我最痛苦的步驟，我是一個沒什麼審美觀的人只會做出來但樣式真的讓我搞了一陣子...現在這樣我自己覺得滿不錯的！</p>
+                </section>
+                <section class="paragraph">
+                    <h3 class="content_title">總結</h3>
+                    <p>其實還有一些功能我還想再加上去，但是還是先將它建起來方便我去紀錄文章比較重要！</p>
+                    <p>未來還會增加：</p>
+                    <ol>
+                        <li>總/當日瀏覽人數</li>
+                        <li>結合FaceBook留言功能</li>
+                        <li>文章分類</li>
+                        <li>單一文章連覽次數等等...</li>
+                    </ol>
+                    <p>這是我第一次撰寫文章，感謝您的閱讀！</p>
+                </section>
+            </div>
+            <!--文章-->
+            <div class="menu" id="menu"></div>
+            <div class="footer" id="footer"></div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</html>

@@ -1,39 +1,83 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 html{
     font-size: 25px;
     li{
-        list-style: none;
+        list-style-position: inside;
     }
-    a{
-        text-decoration:none;
-    }
+
 }
-body{
-    background: #ffffffc4;
-    padding: 20px;
+.article_title{
+    text-align: center;
+    font-family:Microsoft JhengHei;
+    font-size: 2.3rem;
 }
-::-webkit-scrollbar {
-    width: 1vw;
-}
-::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 4px;
-    border-radius: 10px;
-    background: rgb(219,219,219);
-}
-h1{
-    text-align: center;   
-}
-hr{
+.article_hr{
+    margin: 20px 0;
     border: none;
-    height: 10px;
+    height: 3px;
     background: linear-gradient(90deg,#00000038, #0000008a,#00000038);
     border-radius: 20px;
+}
+//目錄
+.table_of_Contents{
+    font-size: 1rem;
+    li{
+        list-style-position: inside;
+        list-style-type: inherit;;
+        margin: 3px 0;
+        font-size: 1rem;
+    }
+}
+//段落
+.preface{
+    .content_title{
+        font-size: 1.4rem;
+        text-decoration:underline
+    }
+    p{
+        text-align: justify;
+        margin-top: 0.5rem;
+        letter-spacing: 1.5px;
+    }
+}
+.paragraph
+{
+    a:link{
+        color: #03a9f4db;
+    }
+    a:visited{
+        color: #03a9f4db;
+    }
+    font-family: sans-serif;;
+    .content_title{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        text-decoration:underline
+    }
+    p{
+        text-align: justify;
+        margin-top: 0.5rem;
+        letter-spacing: 1.5px;
+    }
+    ol{
+        list-style-position: inside;
+        margin-top: 0.5rem;
+        li{
+            list-style-type: inherit;
+        }
+    }
+}
+//iphone 6/7/8/X
+@media (min-width: 320px) and (max-width: 375px) {
+    html{
+        font-size: 20px;
+    }
+}
+//iphone 6/7/8 Plus
+@media (min-width: 376px) and (max-width: 414px) {
+
+}
+//iPad
+@media (min-width: 415px) and (max-width: 768px) {
+
 }
