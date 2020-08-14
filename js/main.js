@@ -6,7 +6,7 @@
     ga ( 'send' , ' pageview' );
     ga(function() {
         let trackers = ga.getAll();
-        $('#online').append(trackers.length);
+        $('#online').text(trackers.length);
     });
 $(document).ready(function () {
     $( window ).scroll(function() {
