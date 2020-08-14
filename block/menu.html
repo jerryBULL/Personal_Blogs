@@ -11,9 +11,10 @@
         <ul>
             <li><img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>開箱</p></li>
             <li>
-                <img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>心得</p>                                <ul>
+                <img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>心得</p>                                
+                <ol>
                     <li><a href="https://jerrybull.github.io/Personal_Blogs/article/2020_technology1.html">創立一個屬於自己的技術部落格</a></li>
-                </ul>
+                </ol>
             </li>
         </ul>
     </ul>
@@ -22,9 +23,6 @@
         <ul>
             <li>
                 <img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>Html</p>
-                <ul>
-                    <li>Test</li>
-                </ul>
             </li>
             <li>
                 <img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>CSS</p>
@@ -54,6 +52,6 @@
 </div>
 <script>
     $("#daily,#technology,#2020year").click(function () {
-        $(this).nextAll("ul").children().toggle( "slow" );
+        $(this).nextAll("ul,ol").children().toggle( "slow" );
     });
 </script>

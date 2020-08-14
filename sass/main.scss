@@ -209,6 +209,15 @@ body{
                 }
             }
         }
+        ol{
+            li{
+                list-style-position: inside;
+                list-style-type: inherit;;
+                a{
+                    font-size: 0.65rem;
+                }
+            }
+        }
         img{
             vertical-align: middle;
             cursor: pointer;

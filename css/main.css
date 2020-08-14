@@ -215,6 +215,13 @@ body {
 .container .menu ul li a:link {
   color: #5c5151;
 }
+.container .menu ol li {
+  list-style-position: inside;
+  list-style-type: inherit;
+}
+.container .menu ol li a {
+  font-size: 0.65rem;
+}
 .container .menu img {
   vertical-align: middle;
   cursor: pointer;
