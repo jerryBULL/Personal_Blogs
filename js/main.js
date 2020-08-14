@@ -9,9 +9,6 @@
         $('#flow').append("<p>在線人數："+trackers.length+"</p>");
     });
 $(document).ready(function () {
-    $("#content").load("../block/article.html");
-    $("#menu").load("../block/menu.html");
-    $("#footer").load("../block/footer.html");
     $( window ).scroll(function() {
         if($(window).width()>764)
         {
