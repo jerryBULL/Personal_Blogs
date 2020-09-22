@@ -26,6 +26,9 @@
             </li>
             <li>
                 <img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>CSS</p>
+                <ol>
+                    <li><a href="https://jerrybull.github.io/Personal_Blogs/article/2020_CSS1.html">CSS權重(CSS Specificity)</a></li>
+                </ol>
             </li>
             <li>
                 <img id="technology" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>Javascript</p>
@@ -39,7 +42,6 @@
     <ul>
         <img id="2020year" src="https://jerrybull.github.io/Personal_Blogs/image/folder.png"><p>2020</p>
         <ul>
-            <li><a href="">Test</a></li>
         </ul>
     </ul>
 </div>
@@ -52,6 +54,6 @@
 </div>
 <script>
     $("#daily,#technology,#2020year").click(function () {
-        $(this).nextAll("ul,ol").children().toggle( "slow" );
+        $(this).nextAll("ul,ol").children().toggle( "fast" );
     });
 </script>
