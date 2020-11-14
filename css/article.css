@@ -5,6 +5,11 @@ html li {
   list-style-position: inside;
 }
 
+.article_background {
+  background: #e2e2e2;
+  padding: 15px;
+}
+
 .article_title {
   text-align: center;
   font-family: Microsoft JhengHei;

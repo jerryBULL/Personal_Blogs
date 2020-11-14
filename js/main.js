@@ -9,6 +9,7 @@
         $('#online').text(trackers.length);
     });
 $(document).ready(function () {
+    //顯示回到最上面的圖標
     $( window ).scroll(function() {
         if($(window).width()>764)
         {
@@ -36,6 +37,22 @@ $(document).ready(function () {
     });
     //回到最上面
     $("nav >img").click(function () { 
-        $('html, body').scrollTop($(".header").height()*0.75);    
+        let body = $("html, body");
+        body.stop().animate({scrollTop:$(".header").height()*0.75}, 500, 'swing',);
     });
 });
+//切換文章
+function swich_article(){
+    $(".js_swich_article").click(function () {
+        let article = $(this).data("article");
+        $("#content").empty();
+        if(article == "home"){
+            $("#content").load(`block/article.html`);
+            $("#content").attr("class","content");
+            console.log("ff");
+        }else{
+            $("#content").load(`article/${article}.html`);
+            $("#content").attr("class","content article_background");
+        }
+    });
+}

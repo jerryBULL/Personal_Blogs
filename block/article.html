@@ -1,60 +1,60 @@
 <div class="content_box">
-    <a href="article/2020_technology1.html" id="2020_technology">創立一個屬於自己的技術部落格</a>
+    <p class="js_swich_article" data-article="2020_08_22_Experience">創立一個屬於自己的技術部落格</p>
     <hr>
     <span>
         我自己為什麼要花時間去製作和撰寫部落格？以及為何選擇自己動手做？這是從無到有去製作個人技術部落格
-        <a href="article/2020_technology1.html">...繼續閱讀</a>
     </span>
+    <p class="js_swich_article continue" data-article="2020_08_22_Experience">繼續閱讀</p>
 </div>
 <div class="content_box">
-    <a href="article/2020_CSS1.html" id="2020_CSS1">CSS權重(CSS Specificity)</a>
+    <p class="js_swich_article" data-article="2020_09_22_Css">CSS權重(CSS Specificity)</p>
     <hr>
     <span>
         權重的意思就是CSS的優先權。
-        <a href="article/2020_CSS1.html">...繼續閱讀</a>
     </span>
+    <p class="js_swich_article continue" data-article="2020_09_22_Css">繼續閱讀</p>
 </div>
-<!-- <hr class="display_hr"> -->
-<div class="content_page">
+<!-- <div class="content_page">
     <div class="left"><img src="image/left.png"></div>
     <div class="page" id="page">
     </div>
     <div class="right"><img src="image/right.png"></div>
-</div> 
+</div>  -->
 <script>
+    swich_article();
     //顯示幾個頁面
-    let page_max=1;
-    let page=1;
-    for(let i=1;i<=page_max;i++)
-    {
-        $('#page').append('<span id="'+i+'">'+i+'</span>');
-    }
-    //頁面切換動作
-    $("#"+page).css("background","#90b76c6b");
-    $(".left,.right").click(function (){
-        if($(this).attr('class')=="left"){
-            if(page>1){
-                $("#"+page).css("background","#deb8878a");
-                page--;
-                $("iframe").attr("src","article/page_"+page+".html");
-                $('html, body').scrollTop($(".header").height()*0.75);
-                $("#"+page).css("background","#90b76c6b");
-            }
-        }else{
-            if(page<page_max){
-                $("#"+page).css("background","#deb8878a");
-                page++;
-                $("iframe").attr("src","article/page_"+page+".html");
-                $('html, body').scrollTop($(".header").height()*0.75);
-                $("#"+page).css("background","#90b76c6b");
-            }
-        }
-    });
-    $(".page > span").click(function () {
-        $("#"+page).css("background","#deb8878a");
-        page=$(this).attr("id");
-        $("iframe").attr("src","article/page_"+page+".html");
-        $('html, body').scrollTop($(".header").height()*0.75);
-        $("#"+page).css("background","#90b76c6b");
-    });
+    // let page_max=1;
+    // let page=1;
+    // for(let i=1;i<=page_max;i++)
+    // {
+    //     $('#page').append('<span id="'+i+'">'+i+'</span>');
+    // }
+    // //頁面切換動作
+    // $("#"+page).css("background","#90b76c6b");
+    // $(".left,.right").click(function (){
+    //     if($(this).attr('class')=="left"){
+    //         if(page>1){
+    //             $("#"+page).css("background","#deb8878a");
+    //             page--;
+    //             $("iframe").attr("src","article/page_"+page+".html");
+    //             $('html, body').scrollTop($(".header").height()*0.75);
+    //             $("#"+page).css("background","#90b76c6b");
+    //         }
+    //     }else{
+    //         if(page<page_max){
+    //             $("#"+page).css("background","#deb8878a");
+    //             page++;
+    //             $("iframe").attr("src","article/page_"+page+".html");
+    //             $('html, body').scrollTop($(".header").height()*0.75);
+    //             $("#"+page).css("background","#90b76c6b");
+    //         }
+    //     }
+    // });
+    // $(".page > span").click(function () {
+    //     $("#"+page).css("background","#deb8878a");
+    //     page=$(this).attr("id");
+    //     $("iframe").attr("src","article/page_"+page+".html");
+    //     $('html, body').scrollTop($(".header").height()*0.75);
+    //     $("#"+page).css("background","#90b76c6b");
+    // });
 </script>

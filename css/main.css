@@ -53,13 +53,15 @@ body {
   grid-column: 1/11;
   grid-row: 2/3;
 }
-.container nav a {
+.container nav p {
   color: white;
   line-height: 10vh;
+  display: inline;
   transition: 0.5s;
   margin: 10px;
+  cursor: pointer;
 }
-.container nav a:hover {
+.container nav p:hover {
   color: red;
 }
 .container nav img {
@@ -97,13 +99,15 @@ body {
   border-radius: 10px;
   padding: 10px;
   overflow: hidden;
+  text-align: center;
 }
-.container .content .content_box a {
+.container .content .content_box p {
   color: #03a9f4db;
   text-decoration: none;
   font-size: 1.4rem;
   font-family: Microsoft JhengHei;
   text-align: justify;
+  cursor: pointer;
 }
 .container .content .content_box hr {
   position: relative;
@@ -117,12 +121,25 @@ body {
 }
 .container .content .content_box span {
   font-family: Microsoft JhengHei;
-  display: block;
   font-size: 1rem;
   text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
 }
-.container .content .content_box span a {
-  font-size: 0.5rem;
+.container .content .content_box .continue {
+  font-size: 0.7rem;
+  display: inline;
+  background: #23b1f2;
+  color: #dbeef7;
+  border-radius: 25px;
+  padding: 2px 10px;
+  transition: background 1s, color 1s;
+}
+.container .content .content_box .continue:hover {
+  background: #dbeef7;
+  color: #23b1f2;
 }
 .container .content .content_page {
   margin: 0 auto;
@@ -212,11 +229,9 @@ body {
   font-size: 0.7rem;
   margin: 0 0 0 31px;
 }
-.container .menu ul li a:visited {
-  color: #5c5151;
-}
-.container .menu ul li a:link {
-  color: #5c5151;
+.container .menu ul p {
+  display: inline;
+  cursor: pointer;
 }
 .container .menu ol li {
   list-style-position: inside;

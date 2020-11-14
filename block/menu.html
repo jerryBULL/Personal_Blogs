@@ -6,32 +6,36 @@
 <div class="menu_box classification">
     <span>分類</span>
     <hr>
-    <ul>
-        <img id="daily" src="image/folder.png"><p>日常</p>
+    <ul><img id="daily" src="image/folder.png"><p>日常</p>
         <ul>
-            <li><img id="technology" src="image/folder.png"><p>開箱</p></li>
-            <li>
-                <img id="technology" src="image/folder.png"><p>心得</p>                                
+            <li><img id="technology" src="image/folder.png"><p>開箱</p>
                 <ol>
-                    <li><a href="https://jerrybull.github.io/Personal_Blogs/article/2020_technology1.html">創立一個屬於自己的技術部落格</a></li>
+                    <li><p>賺錢中</p></li>
+                </ol>
+            </li>
+            <li><img id="technology" src="image/folder.png"><p>心得</p>                                
+                <ol>
+                    <li><p class="js_swich_article" data-article="2020_08_22_Experience">創立一個屬於自己的技術部落格</p></li>
                 </ol>
             </li>
         </ul>
     </ul>
-    <ul>
-        <img id="technology" src="image/folder.png"><p>技術</p>
+    <ul><img id="technology" src="image/folder.png"><p>技術</p>
         <ul>
-            <li>
-                <img id="technology" src="image/folder.png"><p>Html</p>
-            </li>
-            <li>
-                <img id="technology" src="image/folder.png"><p>CSS</p>
+            <li><img id="technology" src="image/folder.png"><p>Html</p>
                 <ol>
-                    <li><a href="https://jerrybull.github.io/Personal_Blogs/article/2020_CSS1.html">CSS權重(CSS Specificity)</a></li>
+                    <li><p>學習中</p></li>
                 </ol>
             </li>
-            <li>
-                <img id="technology" src="image/folder.png"><p>Javascript</p>
+            <li><img id="technology" src="image/folder.png"><p>CSS</p>
+                <ol>
+                    <li><p class="js_swich_article" data-article="2020_09_22_Css">CSS權重(CSS Specificity)</p></li>
+                </ol>
+            </li>
+            <li><img id="technology" src="image/folder.png"><p>Javascript</p>
+                <ol>
+                    <li><p>學習中</p></li>
+                </ol>
             </li>
         </ul>
     </ul>
@@ -39,9 +43,18 @@
 <div class="menu_box years_Sort">
     <span>年分排序</span>
     <hr>
-    <ul>
-        <img id="2020year" src="image/folder.png"><p>2020</p>
+    <ul><img id="2020year" src="image/folder.png"><p>2020</p>
         <ul>
+            <li><img id="technology" src="image/folder.png"><p>八月</p>
+                <ol>
+                    <li><p class="js_swich_article" data-article="2020_08_22_Experience">創立一個屬於自己的技術部落格</p></li>
+                </ol>
+            </li>
+            <li><img id="technology" src="image/folder.png"><p>九月</p>
+                <ol>
+                    <li><p class="js_swich_article" data-article="2020_09_22_Css">CSS權重(CSS Specificity)</p></li>
+                </ol>
+            </li>
         </ul>
     </ul>
 </div>
@@ -56,4 +69,5 @@
     $("#daily,#technology,#2020year").click(function () {
         $(this).nextAll("ul,ol").children().toggle( "fast" );
     });
+    swich_article();
 </script>
